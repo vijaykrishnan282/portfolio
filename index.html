@@ -5,20 +5,27 @@
     <link rel="stylesheet" href="styles.css" />
        <script src="https://cdn.tailwindcss.com"></script>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <!--animation script-->
+      <script>document.documentElement.classList.add('js')</script>
 
   </head>
   <body>
     <!-- nav -->
-    <header class=" 2xl:container mx-auto bg-[#081c29]">
+    <header id="nav" class=" 2xl:container mx-auto bg-[#5c3ef4]">
       <div class="w-[90%] mx-auto flex item-cente justify-between  text-[#ffffff] py-4">
       
-          <a href="#" class="logo px-5 font-bold text-2xl">Portfolio.</a>
-      <nav class="flex gap-5 pr-5  ">
-        <a href="#" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Home</a>
-        <a href="#" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">About</a>
-        <a href="#" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Skill</a>
-        <a href="#" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Portfolio</a>
-        <a href="#" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Contact</a>
+          <a href="#nav" class="logo px-5 font-bold text-2xl">Portfolio.</a>
+      <nav class="flex gap-5 ">
+        <a href="#home" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Home</a>
+        <a href="#Service" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Service</a>
+
+        <a href="#About" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">About</a>
+
+        <a href="#Skill" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Skill</a>
+
+        <a href="#Portfolio" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Portfolio</a>
+
+        <a href="#Contact" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Contact</a>
       </nav>
         </div>
       
@@ -26,15 +33,18 @@
     
     
       <!-- hero  -->
-      <div class="hero 2xl:container mx-auto">
-      <div class="w-[90%] mx-auto grid sm:grid-cols-1  md:grid-cols-2 gap-8 m-20">
+      <div id="home" class="hero 2xl:container mx-auto">
+      <div class="w-[90%] mx-auto grid sm:grid-cols-1  md:grid-cols-2 gap-8  my-20">
       
-      <div class="flex flex-col items-center justify-center">
+    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
+      <div class="flex flex-col items-center justify-center text-center ">
         <h2 class="font-bold text-[40px]">I'm</h2>
         <h1 class="font-bold text-[50px]">Vijay Krishnan</h1>
         <div class="w-full h-[50px] flex justify-center items-center">
     <h1 id="typewriter" class="text-4xl font-bold"></h1>
 </div>
+
+
 
 <script>
 const words = ["Graphic Designer ", "Web Developer "];
@@ -71,179 +81,245 @@ type();
 <!-- hero text -->
 
         <p class="text-center">A passionate Graphic Designer and Web Developer with a knack for creating visually appealing and user-friendly experiences.</p>
-        <button class="rounded-full mt-5 py-2 px-5 w-[180px] bg-[#0266FF] text-white"> About me more</button>
+        <button class="rounded-full mt-5 py-2 px-5 w-[180px] bg-[#3fedcc] text-white"> About me more</button>
+       <br />
+        
+        <i class="fa-solid fa-arrow-down text-2xl animate-bounce  "></i>
+
+    
+      </div>
       </div>
 
       <!-- hero text  img-->
+<div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
+      <div class=" flex items-center justify-center  ">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/justice%20ref.png" alt="vijay krishnan photo" class="h-[350px]" />
+      </div>
+</div> 
+      </div>
+      </div>
 
-      <div class=" flex flex-col items-center justify-center ">
-        <img src="https://ik.imagekit.io/isqo0eqj9/revemp%20%20training%20/linked%20in%20profile%20blue.png?updatedAt=1747820959517" alt="vijay krishnan photo" class="h-[250px]" />
-      </div>
-            
-      </div>
-      </div>
-
-      <div class="flex item-cente justify-center">
-        <div class="bg-[#0266FF] h-[50px] w-[50px] rounded-full animate-bounce ">
-        <i class="fa-solid fa-arrow-down relative top-[25%] left-[29%] text-2xl text-white"></i>
-      </div>
-    </div>
-      
       
       
     <!-- hero end  -->
     
-    <!-- service  -->
-    <div class="2xl:container mx-auto bg-gradient-to-r from-[#00A3FE] to-[#005DFD]">
-      <h1 class=" text-center  text-[50px] font-bold text-white pt-10">My Service</h1>
-      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 py-10">
+     <!-- service  -->
+    <div id="Service" class="2xl:container mx-auto bg-[#5c3ef4]">
+      <h1 class=" text-center  text-4xl pt-10 pb-20 font-bold text-[#FFFFFF] ">SERVICE</h1>
+      <div class="w-[80%] mx-auto grid grid-cols-1  md:grid-cols-3 gap-20 pb-10 ">
 
         <!-- graphic design -->
-       <div class="bg-white flex flex-col items-center justify-center text-center rounded-[10px] gap-3 p-6 ">
-       <i class="fa-solid fa-pen-nib text-[#0266FF] text-4xl "></i>
+<div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
+       
+       <div class="w-[250px] h-[350px] bg-white flex flex-col items-center  text-center rounded-b-full gap-2 pb-10">
+     <i class="fa-solid fa-pen-nib text-white text-4xl border-2 rounded-full p-4 bg-[#151515] -translate-y-6"></i>
         <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
         <p class="text-gray-600">Compelling visual identities, marketing materials, and digital assets that communicate effectively.</p>
       </div>
+      </div>
 
         <!-- web development  -->
-       <div class="bg-white flex flex-col items-center justify-center text-center rounded-[10px] gap-3 p-6">
-       <i class="fa-solid fa-code text-[#0266FF] text-4xl "></i>
+<div class="delay-[200ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+
+          <div class="w-[250px] h-[350px] bg-white  flex flex-col items-center  text-center rounded-b-full gap-2 pb-10  ">
+     <i class="fa-solid fa-code text-white text-4xl border-2 rounded-full p-4 bg-[#151515] -translate-y-6"></i>
         <h3 class="text-xl font-bold mb-2">Web Development</h3>
         <p class="text-gray-600">Building responsive and user-friendly websites with clean and efficient code.</p>
       </div>
-      
+      </div>
+       
  
  <!-- ui/ux  -->
-       <div class="bg-white flex flex-col items-center justify-center text-center rounded-[10px] gap-3 p-6">
-       <i class="fa-solid fa-palette text-[#0266FF] text-4xl "></i>
+<div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
+
+     <div class="w-[250px] h-[350px] bg-white flex flex-col items-center  text-center rounded-b-full gap-2 pb-10  ">
+     <i class="fa-solid fa-palette text-white text-4xl border-2 rounded-full p-4 bg-[#151515] -translate-y-6"></i>
         <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
-        <p class="text-gray-600">
-Creating intuitive and engaging user interfaces for optimal user experience.</p>
+        <p class="text-gray-600">Creating intuitive and engaging user interfaces for optimal user experience.</p>
+      </div>
       </div>
  
 
-    </div>  
+      
+    </div>
     </div>
     
     <!-- service end  -->
+
+
+
+      <div class=" 2xl:container mx-auto bg-[#381cc6] ">
+<div class="w-60%]  mx-auto grid sm:grid-cols-1 md:grid-cols-3   ">
+    <div class="mx-auto py-5 text-center ">-</div>
+ </div>
+ </div>
     
+    <!-- service end  -->
     
+   <!-- about me  -->   
+
+
+     <div id="About" class=" 2xl:container mx-auto bg-white ">
+<div class="w-[90%]  mx-auto grid sm:grid-cols-1 md:grid-cols-2  gap-5 py-20  ">
+
+  <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+
+    <div class="flex items-center justify-center">
+      <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/WhatsApp%20Image%202025-03-27%20at%2011.50.35%20AM.jpeg?updatedAt=1748078328515" alt="vijay krishnan photo" class="h-[300px] rounded-full " />
+    </div>
+    </div>
+
+    <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+
+    <div class=" flex flex-col justify-center text-center gap-5">
+      <h1 class="text-2xl font-bold">About me</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, asperiores alias sed amet, molestiae animi laborum quam sit quasi placeat beatae ad? Tempora non maiores repudiandae veritatis sint culpa magni.</p>
+    </div>
+    </div>
+
+ </div>
+ </div>
+
+
+<!-- about me end  -->   
+
+
+
     
        <!-- skills  start -->
        
        
        
 
-<div class=" 2xl:container mx-auto">
-<h1 class=" text-center  text-[50px] font-bold text-[#0266FF] py-20">SKILLS</h1>
-<div class="w-[80%]  mx-auto grid sm:grid-cols-2  md:grid-cols-4 gap-10 pb-20 ">
+<div id="Skill" class=" 2xl:container mx-auto">
+<h1 class=" text-center  text-4xl py-10 font-bold text-[#0266FF] ">SKILLS</h1>
+<div class="w-[80%]  mx-auto grid sm:grid-cols-2  md:grid-cols-4 gap-5 pb-20 ">
         
         
 <!-- round 1 start -->
+
+<div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+
 <div class="flex flex flex-col justify-center items-center">
   <svg width="120" height="120">
-            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#0266FF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
+      <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+        <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#5C3EF4" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
         </svg>
 
   <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" style="font-family: 'Titillium Web', sans-serif;">95%</div>
   <div class=" m-5 text-1xl font-bold text-gray-900">HTML</div>
 </div>
-
+</div>
 <!-- round 1 end -->
 
 
 <!-- round 2 start -->
+ <div class="delay-[400ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
 <div class="flex flex flex-col justify-center items-center">
   <svg width="120" height="120">
-            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#0266FF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
+     <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+        <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#5A3DEF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
         </svg>
 
   <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" style="font-family: 'Titillium Web', sans-serif;">95%</div>
   <div class="  m-5 text-1xl font-bold text-gray-900">CSS</div>
 </div>
-
-<!-- round 2 end -->
-
-<!-- round 3 start -->
-<div class="flex flex flex-col justify-center items-center">
-  <svg width="120" height="120">
-            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#0266FF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
-        </svg>
-
-  <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" style="font-family: 'Titillium Web', sans-serif;">85%</div>
-  <div class="  m-5 text-1xl font-bold text-gray-900">JAVA SCRIPT</div>
-</div>
-
-<!-- round 3 end -->
-
-<!-- round 4 start -->
-<div class="flex flex flex-col justify-center items-center">
-  <svg width="120" height="120">
-            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#0266FF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
-        </svg>
-
-  <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" style="font-family: 'Titillium Web', sans-serif;">80%</div>
-  <div class="  m-5 text-1xl font-bold text-gray-900">REACT</div>
-</div>
-
-<!-- round 4 end -->
-
-<!-- round 1 start -->
-<div class="flex flex flex-col justify-center items-center">
-  <svg width="120" height="120">
-            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#0266FF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
-        </svg>
-
-  <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" style="font-family: 'Titillium Web', sans-serif;">95%</div>
-  <div class=" m-5 text-1xl font-bold text-gray-900">HTML</div>
-</div>
-
-<!-- round 1 end -->
-
-
-<!-- round 2 start -->
-<div class="flex flex flex-col justify-center items-center">
-  <svg width="120" height="120">
-            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#0266FF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
-        </svg>
-
-  <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" style="font-family: 'Titillium Web', sans-serif;">95%</div>
-  <div class="  m-5 text-1xl font-bold text-gray-900">CSS</div>
 </div>
 
 <!-- round 2 end -->
 
 <!-- round 3 start -->
+
+<div class="delay-[500ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
 <div class="flex flex flex-col justify-center items-center">
   <svg width="120" height="120">
             <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#0266FF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
+            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#5A3DEF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
         </svg>
 
-  <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" style="font-family: 'Titillium Web', sans-serif;">85%</div>
-  <div class="  m-5 text-1xl font-bold text-gray-900">JAVA SCRIPT</div>
+  <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" >85%</div>
+  <div class=" m-5 text-1xl font-bold text-gray-900 text-center">JAVA SCRIPT</div>
+</div>
 </div>
 
 <!-- round 3 end -->
 
 <!-- round 4 start -->
+ <div class="delay-[600ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
 <div class="flex flex flex-col justify-center items-center">
   <svg width="120" height="120">
             <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#0266FF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
+            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#5C3EF4" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
         </svg>
 
-  <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" style="font-family: 'Titillium Web', sans-serif;">80%</div>
+  <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" >70%</div>
   <div class="  m-5 text-1xl font-bold text-gray-900">REACT</div>
+</div>
 </div>
 
 <!-- round 4 end -->
+
+
+<!-- bar-1 -->
+<div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="border-2 py-2 px-6 flex flex-col items-center justify-center gap-3  ">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/adobe-photoshop-cc-logo-png_seeklogo-268287%20(1).png" alt="" class="h-[40px]">
+
+    <h1 class=" text-1xl text-center font-semibold">Photo shop</h1>
+
+  <div class="w-full bg-gray-300 rounded-full h-3.5 dark:bg-gray-700">
+  <div class="w-[90%] h-3.5 flex items-cente justify-center bg-blue-600  rounded-full text-white text-center text-[10px]">90%</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- bar-2 -->
+<div class="delay-[400ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="border-2 py-2 px-6 flex flex-col items-center justify-center gap-3  ">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/coreldraw-x7-logo-png_seeklogo-248595.png" alt="" class="h-[40px]">
+
+    <h1 class=" text-1xl text-center font-semibold">Corel Draw</h1>
+
+  <div class="w-full bg-gray-300 rounded-full h-3.5 dark:bg-gray-700">
+  <div class="w-[90%] h-3.5 flex items-cente justify-center bg-blue-600  rounded-full text-white text-center text-[10px]">90%</div>
+</div>
+</div>
+</div>
+
+<!-- bar-3 -->
+<div class="delay-[500ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="border-2 py-2 px-6 flex flex-col items-center justify-center gap-3  ">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/adobe-illustrator-cc-logo-png_seeklogo-268288.png" alt="" class="h-[40px]">
+
+    <h1 class=" text-1xl text-center font-semibold">Illustrator</h1>
+
+  <div class="w-full bg-gray-300 rounded-full h-3.5 dark:bg-gray-700">
+  <div class="w-[85%] h-3.5 flex items-cente justify-center bg-blue-600  rounded-full text-white text-center text-[10px]">75%</div>
+</div>
+</div>
+</div>
+
+<!-- bar-4 -->
+ <div class="delay-[600ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="border-2 py-2 px-6 flex flex-col items-center justify-center gap-3  ">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/png-transparent-figma-app-logo-tech-companies-thumbnail.png" alt="" class="h-[40px]">
+
+    <h1 class=" text-1xl text-center font-semibold">Figma</h1>
+
+  <div class="w-full bg-gray-300 rounded-full h-3.5 dark:bg-gray-700">
+  <div class="w-[80%] h-3.5 flex items-cente justify-center bg-blue-600  rounded-full text-white text-center text-[10px]">70%</div>
+</div>
+</div>
+</div>
+
 
 </div>
 </div>
@@ -255,272 +331,233 @@ Creating intuitive and engaging user interfaces for optimal user experience.</p>
            
            <!-- EXPERIENCE -->
            
-<div class=" 2xl:container mx-auto bg-[#dadadb] ">
-<h1 class=" text-center  text-[50px] font-bold text-[#0266FF] py-10">EXPERIENCE</h1>
-<div class="w-[60%]  mx-auto grid sm:grid-cols-1 md:grid-cols- 2 pb-20">
+<div id="" class=" 2xl:container mx-auto bg-[#dadad b] ">
+<h1 class=" text-center  text-4xl font-bold text-[#0266FF] py-10 ">EXPERIENCE</h1>
+<div class="w-[80%]  mx-auto grid sm:grid-cols-1 md:grid-cols-2  gap-5">
        
 
  
      <!-- exp card-1 start -->  
-    
+    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
 
-    <div class="bg-[#ffffff] hover:shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-[50px] py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
-    
-    <div class=" flex flex-col items-center">
-      
-      <div class="rounded-full w-[40px] h-[40px] p-2  bg-[#0266FF]  text-white  flex items-center justify-center">
-     <i class="fa fa-briefcase" style="font-size:20px;"></i>
-    </div> 
-    
-     <div class="  bg-[#0266FF]  h-full w-[3px] rounded-full"></div>
-     
-    </div>
-    
+    <div class="bg-[#ffffff] shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
     
     <div class=" flex flex-col gap-3">
       <h2>2024-2025</h2>
     <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
     <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
-    <p class=" text-[12pt]">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    <p class=" ">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
     </p>
     <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
     </p>
+    </div>
     </div>
     
   </div>
 
  <!-- exp card-1 end -->  
  
+ 
+ <!-- exp card-2 start -->  
+    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
+
+    <div class="bg-[#ffffff] shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
+    
+    <div class=" flex flex-col gap-3">
+      <h2>2024-2025</h2>
+    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
+    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
+    <p class=" ">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    </p>
+    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    </p>
+    </div>
+    </div>
+    
+  </div>
+
+ <!-- exp card-2 end -->  
+ 
+   <!-- exp card-3 start -->  
+    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
+
+    <div class="bg-[#ffffff] shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
+    
+    <div class=" flex flex-col gap-3">
+      <h2>2024-2025</h2>
+    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
+    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
+    <p class=" ">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    </p>
+    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    </p>
+    </div>
+    </div>
+  </div>
+
+ <!-- exp card-3 end -->  
+ 
+ 
+ <!-- exp card-4 start -->  
+    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
+
+    <div class="bg-[#ffffff] shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
+    
+    <div class=" flex flex-col gap-3">
+      <h2>2024-2025</h2>
+    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
+    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
+    <p class=" ">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    </p>
+    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    </p>
+    </div>
+    </div>
+
+  </div>
+
+ <!-- exp card-4 end -->  
  
   
-     <!-- exp card-1 start -->  
-    
-
-    <div class="bg-[#ffffff] hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-[50px] py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
-    
-    <div class=" flex flex-col items-center">
-      
-      <div class="rounded-full w-[40px] h-[40px] p-2  bg-[#0266FF]  text-white  flex items-center justify-center">
-     <i class="fa fa-briefcase" style="font-size:20px;"></i>
-    </div> 
-    
-     <div class="  bg-[#0266FF]  h-full w-[3px] rounded-full"></div>
-     
-    </div>
-    
-    
-    <div class=" flex flex-col gap-3">
-      <h2>2024-2025</h2>
-    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
-    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
-    <p class=" text-[12pt]">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
-    </p>
-    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
-    </p>
-    </div>
-    
-  </div>
-
- <!-- exp card-1 end -->  
- 
- 
-  
-     <!-- exp card-1 start -->  
-    
-
-    <div class="bg-[#ffffff] hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-[50px] py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
-    
-    <div class=" flex flex-col items-center">
-      
-      <div class="rounded-full w-[40px] h-[40px] p-2  bg-[#0266FF]  text-white  flex items-center justify-center">
-     <i class="fa fa-briefcase" style="font-size:20px;"></i>
-    </div> 
-    
-     <div class="  bg-[#0266FF]  h-full w-[3px] rounded-full"></div>
-     
-    </div>
-    
-    
-    <div class=" flex flex-col gap-3">
-      <h2>2024-2025</h2>
-    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
-    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
-    <p class=" text-[12pt]">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
-    </p>
-    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
-    </p>
-    </div>
-    
-  </div>
-
- <!-- exp card-1 end -->  
- 
- 
-  
-     <!-- exp card-1 start -->  
-    
-
-    <div class="bg-[#ffffff] hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-[50px] py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
-    
-    <div class=" flex flex-col items-center">
-      
-      <div class="rounded-full w-[40px] h-[40px] p-2  bg-[#0266FF]  text-white  flex items-center justify-center">
-     <i class="fa fa-briefcase" style="font-size:20px;"></i>
-    </div> 
-    
-     <div class="  bg-[#0266FF]  h-full w-[3px] rounded-full"></div>
-     
-    </div>
-    
-    
-    <div class=" flex flex-col gap-3">
-      <h2>2024-2025</h2>
-    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
-    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
-    <p class=" text-[12pt]">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
-    </p>
-    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
-    </p>
-    </div>
-    
-  </div>
-
- <!-- exp card-1 end -->  
- 
-
 </div>
 </div>
   
   
     <!-- portfolio -->
-   <div class=" 2xl:container mx-auto bg-[#dadadb] ">
-<h1 class=" text-center  text-[50px] font-bold text-[#0266FF] py-10">Portfolio</h1>
-<div class="w-[80%]  mx-auto grid sm:grid-cols-1 md:grid-cols-3  gap-10 pb-20 ">
-       
-    <!-- card-1 start -->
-    
-         <div class="hover:scale-[105%] transition ease-linear px-3 py-3 flex flex-col items-center gap-5 bg-[#ffffff] rounded-[10px] shadow-xl">
-            <div><img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/sweaters.jpg" alt="food image" class="h-50 rounded-[10px]">
-            </div>
-            <a href="https://vijaykrishnan282.github.io/project/" target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 text-[#ffffff] ">view</a>
-             <a href="https://github.com/vijaykrishnan282/project.git"  target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 mb-2 text-[#ffffff] ">Github link</a>
-          </div>
-         
-             <!-- end -->
-             
-    <!-- card-1 start -->
-    
-         <div class="hover:scale-[105%] transition ease-linear px-3 py-3 flex flex-col items-center gap-5 bg-[#ffffff] rounded-[10px] shadow-xl">
-            <div><img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/sweaters.jpg" alt="food image" class="h-50 rounded-[10px]">
-            </div>
-            <a href="https://vijaykrishnan282.github.io/project/" target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 text-[#ffffff] ">view</a>
-             <a href="https://github.com/vijaykrishnan282/project.git"  target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 mb-2 text-[#ffffff] ">Github link</a>
-          </div>
-         
-             <!-- end -->       
-               
-    <!-- card-1 start -->
-    
-         <div class="hover:scale-[105%] transition ease-linear px-3 py-3 flex flex-col items-center gap-5 bg-[#ffffff] rounded-[10px] shadow-xl">
-            <div><img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/sweaters.jpg" alt="food image" class="h-50 rounded-[10px]">
-            </div>
-            <a href="https://vijaykrishnan282.github.io/project/" target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 text-[#ffffff] ">view</a>
-             <a href="https://github.com/vijaykrishnan282/project.git"  target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 mb-2 text-[#ffffff] ">Github link</a>
-          </div>
-         
-             <!-- end -->    
-             
-             <!-- card-1 start -->
-    
-         <div class="hover:scale-[105%] transition ease-linear px-3 py-3 flex flex-col items-center gap-5 bg-[#ffffff] rounded-[10px] shadow-xl">
-            <div><img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/sweaters.jpg" alt="food image" class="h-50 rounded-[10px]">
-            </div>
-            <a href="https://vijaykrishnan282.github.io/project/" target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 text-[#ffffff] ">view</a>
-             <a href="https://github.com/vijaykrishnan282/project.git"  target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 mb-2 text-[#ffffff] ">Github link</a>
-          </div>
-         
-             <!-- end -->
-             
-    <!-- card-1 start -->
-    
-         <div class="hover:scale-[105%] transition ease-linear px-3 py-3 flex flex-col items-center gap-5 bg-[#ffffff] rounded-[10px] shadow-xl">
-            <div><img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/sweaters.jpg" alt="food image" class="h-50 rounded-[10px]">
-            </div>
-            <a href="https://vijaykrishnan282.github.io/project/" target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 text-[#ffffff] ">view</a>
-             <a href="https://github.com/vijaykrishnan282/project.git"  target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 mb-2 text-[#ffffff] ">Github link</a>
-          </div>
-         
-             <!-- end -->       
-               
-    <!-- card-1 start -->
-    
-         <div class="hover:scale-[105%] transition ease-linear px-3 py-3 flex flex-col items-center gap-5 bg-[#ffffff] rounded-[10px] shadow-xl">
-            <div><img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/sweaters.jpg" alt="food image" class="h-50 rounded-[10px]">
-            </div>
-            <a href="https://vijaykrishnan282.github.io/project/" target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 text-[#ffffff] ">view</a>
-             <a href="https://github.com/vijaykrishnan282/project.git"  target="_blank" class="bg-[#0266FF] hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 mb-2 text-[#ffffff] ">Github link</a>
-          </div>
-         
+     <div id="Portfolio" class=" 2xl:container mx-auto bg-[#dad adb] ">
+<h1 class=" text-center  text-4xl font-bold text-[#0266FF] py-10">Portfolio</h1>
+<div class="w-[80%]  mx-auto grid sm:grid-cols-1 md:grid-cols-3  gap-3 pb-5 ">  
+  
+<!--portfolio card-1-->
+<div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="relative group overflow-hidden rounded-[10px]">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/mediamodifier_image.jpeg" class="transition-all duration-300 hover:scale-110" />
+  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+   <a href="#">preview</a>
+   <a href="#">Github link</a>
+    </div> </div>  
+</div>
+
+<!--portfolio card-2-->
+<div class="delay-[400ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="relative group overflow-hidden rounded-[10px]">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/flying-iphone-12-mockup.png?updatedAt=1747821083305" class="transition-all duration-300 hover:scale-110" />
+  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+   <a href="#">preview</a>
+   <a href="#">Github link</a>
+    </div></div>
+  
+</div>
+
+
+<!--portfolio card-3-->
+<div class="delay-[500ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="relative group overflow-hidden rounded-[10px]">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
+  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+   <a href="#">preview</a>
+   <a href="#">Github link</a>
+    </div></div>
+  
+</div>
+
+<!--portfolio card-4-->
+<div class="delay-[600ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="relative group overflow-hidden rounded-[10px]">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
+  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+   <a href="#">preview</a>
+   <a href="#">Github link</a>
+    </div></div>
+  
+</div>
+<!--portfolio card-5-->
+<div class="delay-[700ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="relative group overflow-hidden rounded-[10px]">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
+  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+   <a href="#">preview</a>
+   <a href="#">Github link</a>
+    </div></div>
+  
+</div>
+
+<!--portfolio card-3-->
+<div class="delay-[800ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+
+<div class="relative group overflow-hidden rounded-[10px]">
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
+  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+   <a href="#">preview</a>
+   <a href="#">Github link</a>
+    </div>
+    </div>
+  
+</div>
+
+</div>    
              <!-- end --> 
        
-
-</div>
   <!-- view more button -->  
-       <div class="flex justify-center py-[50px] border-1">
-       <a href="https://www.behance.net/vijaykrishdb26" target="_blank" class=" border-1 border-[#65a2ff] hover:border-2 hover:border-[#ffffff] text-[16pt] font-semibold hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 text-[#ffffff] shadow-xl ">view more</a>
+       <div class="flex justify-center my-10">
+
+       <a href="https://www.behance.net/vijaykrishdb26" target="_blank" class=" bg-[#3FEDCC]  font-semibold hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 shadow-xl  ">view more</a>
       </div>
 </div>
 
 
 <!-- contact me -->
-   <div class=" 2xl:container mx-auto  ">
-  <h1 class=" text-center  text-[50px] font-bold text-[#0266FF] py-10">Contact Me</h1>
-  <div class="w-[80%]  mx-auto grid sm:grid-cols-1 gap-10 md:grid-cols-2   pb-20 ">
-    
-    <!-- div 1-->
-    <div class="flex flex-col gap-10">
+<section id="Contact" class="2xl:container mx-auto bg-[#5c3ef4] text-white py-16 px-4 sm:px-6 lg:px-8 rounded-lg shadow-lg my-10">
+        <h2 class="text-center text-4xl sm:text-5xl font-bold text-white mb-12">Get in Touch!</h2>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
 
-      <div class="flex item-cente  gap-5 text-[25px] font-bold">
-        <i class="fa-solid fa-phone"></i>
-      <h1>+91 98430 48096</h1>
-      </div>
+            <div class="flex flex-col gap-8 p-6 bg-white bg-opacity-10 rounded-xl shadow-inner">
+                <div class="flex items-center gap-4 text-xl sm:text-2xl font-semibold">
+                    <i class="fa-solid fa-phone text-2xl sm:text-3xl text-blue-300"></i>
+                    <p class="tracking-wide">+91 98430 48096</p>
+                </div>
+                <div class="flex items-center gap-4 text-xl sm:text-2xl font-semibold">
+                    <i class="fa-solid fa-envelope text-2xl sm:text-3xl text-blue-300"></i>
+                    <p class="tracking-wide">vijaykrishnan282@gmail.com</p>
+                </div>
+                <div class="flex gap-4 text-xl sm:text-2xl font-semibold">
+                    <i class="fa-solid fa-location-dot text-2xl sm:text-3xl text-blue-300"></i>
+                    <address class="not-italic leading-relaxed tracking-wide">
+                        34/24 Karaithottam,<br>
+                        Karauvampalayam (extn),<br>
+                        Tiruppur, Tamil Nadu - 641604
+                    </address>
+                </div>
+            </div>
 
-      <div class="flex item-cente  gap-5 text-[25px] font-bold">
-        <i class="fa-solid fa-envelope"></i>
-      <h1>vijaykrishnan282@gmail.com</h1>
-      </div>
-
-      <div class="flex item-cente  gap-5 text-[25px] font-bold">
-        <i class="fa-solid fa-location-dot"></i>
-      <h1>34/24 Karaithottam,<br>karauvampalayam(extn),<br>Tirupur, Taminadu-641604</h1>
-      </div>
+            <form class="flex flex-col gap-6 p-6 bg-white bg-opacity-10 rounded-xl shadow-inner">
+                <div>
+                    <label for="name" class="block text-lg font-semibold mb-2">Your Name</label>
+                    <input type="text" id="name" class="bg-white bg-opacity-20 border border-white border-opacity-30 text-white text-base rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-3 placeholder-gray-300 transition duration-200 ease-in-out" placeholder="Enter your full name" required>
+                </div>
+                <div>
+                    <label for="phone" class="block text-lg font-semibold mb-2">Phone Number</label>
+                    <input type="tel" id="phone" class="bg-white bg-opacity-20 border border-white border-opacity-30 text-white text-base rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-3 placeholder-gray-300 transition duration-200 ease-in-out" placeholder="e.g., +91 12345 67890" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-semibold mb-2">Your Message</label>
+                    <textarea id="message" rows="5" class="bg-white bg-opacity-20 border border-white border-opacity-30 text-white text-base rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-3 placeholder-gray-300 transition duration-200 ease-in-out resize-y" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
      
-    </div>
-  <!-- div 2-->
-<div class="flex flex-col gap-10">
+     <!--aniation script end-->
+  <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 
-      <div class="gap-5 text-[25px] font-bold">
-        <label for="">Name</label>
-        <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="enter your name" required />
-      </div>
-
-       <div class="gap-5 text-[25px] font-bold">
-        <label for="">Phone number</label>
-        <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="enter your name" required />
-      </div>
-
-       <div class="gap-5 text-[25px] font-bold">
-        <label for="">Message</label>
-        <input type="text" class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="enter your name" required />
-      </div>
-
-     
-    </div>
-
-
-    </div> 
-     </div> 
-  
   </body>
 </html>
 
