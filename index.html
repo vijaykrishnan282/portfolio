@@ -11,8 +11,8 @@
   </head>
   <body>
     <!-- nav -->
-    <header id="nav" class=" 2xl:container mx-auto bg-[#5c3ef4]">
-      <div class="w-[90%] mx-auto flex item-cente justify-between  text-[#ffffff] py-4">
+    <header id="nav" class=" 2xl:container mx-auto bg-[#5c3e f4]">
+      <div class="w-[80%] mx-auto flex item-cente justify-between   py-4">
       
           <a href="#nav" class="logo px-5 font-bold text-2xl">Portfolio.</a>
       <nav class="flex gap-5 ">
@@ -38,45 +38,27 @@
       
     <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
       <div class="flex flex-col items-center justify-center text-center ">
-        <h2 class="font-bold text-[40px]">I'm</h2>
-        <h1 class="font-bold text-[50px]">Vijay Krishnan</h1>
+        <h2 class="text-3xl font-bold mb-2">Hi, I'm</h2>
+        <h1 class="text-5xl font-bold text-indigo-600">Vijay Krishnan</h1>
         <div class="w-full h-[50px] flex justify-center items-center">
-    <h1 id="typewriter" class="text-4xl font-bold"></h1>
+    <h1 id="typewriter" class="text-xl font-medium mt-4 text-gray-700"></h1>
 </div>
 
 
 
-<script>
-const words = ["Graphic Designer ", "Web Developer "];
-let i = 0;
-let j = 0;
-let currentWord = "";
-let isDeleting = false;
-
-function type() {
-  currentWord = words[i];
-  if (isDeleting) {
-    document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
-    j--;
-    if (j == 0) {
-      isDeleting = false;
-      i++;
-      if (i == words.length) {
-        i = 0;
-      }
+   <!-- JavaScript for Typewriter Effect -->
+  <script>
+    const words = [" Graphic Designer ", " Web Developer "];
+    let i = 0, j = 0, currentWord = '', isDeleting = false;
+    function type() {
+      currentWord = words[i];
+      document.getElementById("typewriter").textContent = isDeleting ? currentWord.substring(0, j--) : currentWord.substring(0, j++);
+      if (!isDeleting && j === currentWord.length) isDeleting = true;
+      else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % words.length; }
+      setTimeout(type, 150);
     }
-  } else {
-    document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
-    j++;
-    if (j == currentWord.length) {
-      isDeleting = true;
-    }
-  }
-  setTimeout(type, 200);
-}
-
-type();
-</script>
+    type();
+  </script>
 
 <!-- hero text -->
 
@@ -93,95 +75,70 @@ type();
       <!-- hero text  img-->
 <div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
       <div class=" flex items-center justify-center  ">
-        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/justice%20ref.png" alt="vijay krishnan photo" class="h-[350px]" />
+                <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/justice%20ref.png" alt="Vijay Krishnan" class="h-80">
       </div>
 </div> 
       </div>
       </div>
-
-      
       
     <!-- hero end  -->
     
+    
+    
      <!-- service  -->
-    <div id="Service" class="2xl:container mx-auto bg-[#5c3ef4]">
-      <h1 class=" text-center  text-4xl pt-10 pb-20 font-bold text-[#FFFFFF] ">SERVICE</h1>
-      <div class="w-[80%] mx-auto grid grid-cols-1  md:grid-cols-3 gap-20 pb-10 ">
+     
+     <div id="Service" class="2xl:container mx-auto bg-[#5c3 ef4] py-10">
+    <h1 class="text-center text-4xl pt-10 pb-20 font-bold text-[#4f46e5]">SERVICE</h1>
+    <div class="w-[80%] mx-auto text-white grid grid-cols-1 md:grid-cols-3 gap-20 pb-10 items-center justify-items-center">
 
-        <!-- graphic design -->
-<div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
-       
-       <div class="w-[250px] h-[350px] bg-white flex flex-col items-center  text-center rounded-b-full gap-2 pb-10">
-     <i class="fa-solid fa-pen-nib text-white text-4xl border-2 rounded-full p-4 bg-[#151515] -translate-y-6"></i>
-        <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
-        <p class="text-gray-600">Compelling visual identities, marketing materials, and digital assets that communicate effectively.</p>
-      </div>
+      <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
+        <div class="w-[250px] h-[350px] bg-[#4f46e5] flex flex-col items-center text-center rounded-b-full gap-2 pb-10 shadow-lg">
+          <i class="fa-solid fa-pen-nib text-white text-4xl border-2 rounded-full p-4 bg-[#32c9c4] -translate-y-6"></i>
+          <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
+          <p class="px-4">Compelling visual identities, marketing materials, and digital assets that communicate effectively.</p>
+        </div>
       </div>
 
-        <!-- web development  -->
-<div class="delay-[200ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+      <div class="delay-[200ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+        <div class="w-[250px] h-[350px] bg-[#4f46e5] flex flex-col items-center text-center rounded-b-full gap-2 pb-10 shadow-lg">
+          <i class="fa-solid fa-code text-white text-4xl border-2 rounded-full p-4 bg-[#ffb90f] -translate-y-6" aria-label="Web Development icon"></i>
+          <h3 class="text-xl font-bold mb-2">Web Development</h3>
+          <p class="px-4">Building responsive and user-friendly websites with clean and efficient code.</p>
+        </div>
+      </div>
 
-          <div class="w-[250px] h-[350px] bg-white  flex flex-col items-center  text-center rounded-b-full gap-2 pb-10  ">
-     <i class="fa-solid fa-code text-white text-4xl border-2 rounded-full p-4 bg-[#151515] -translate-y-6"></i>
-        <h3 class="text-xl font-bold mb-2">Web Development</h3>
-        <p class="text-gray-600">Building responsive and user-friendly websites with clean and efficient code.</p>
+      <div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
+        <div class="w-[250px] h-[350px] bg-[#4f46e5] flex flex-col items-center text-center rounded-b-full gap-2 pb-10 shadow-lg">
+          <i class="fa-solid fa-palette text-white text-4xl border-2 rounded-full p-4 bg-[#ff622f] -translate-y-6" aria-label="UI/UX Design icon"></i>
+          <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+          <p class="0 px-4">Creating intuitive and engaging user interfaces for optimal user experience.</p>
+        </div>
       </div>
-      </div>
-       
- 
- <!-- ui/ux  -->
-<div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
-
-     <div class="w-[250px] h-[350px] bg-white flex flex-col items-center  text-center rounded-b-full gap-2 pb-10  ">
-     <i class="fa-solid fa-palette text-white text-4xl border-2 rounded-full p-4 bg-[#151515] -translate-y-6"></i>
-        <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
-        <p class="text-gray-600">Creating intuitive and engaging user interfaces for optimal user experience.</p>
-      </div>
-      </div>
- 
-
       
-    </div>
-    </div>
-    
-    <!-- service end  -->
-
-
-
-      <div class=" 2xl:container mx-auto bg-[#381cc6] ">
-<div class="w-60%]  mx-auto grid sm:grid-cols-1 md:grid-cols-3   ">
-    <div class="mx-auto py-5 text-center ">-</div>
  </div>
- </div>
-    
+    </div>
     <!-- service end  -->
     
-   <!-- about me  -->   
 
-
-     <div id="About" class=" 2xl:container mx-auto bg-white ">
-<div class="w-[90%]  mx-auto grid sm:grid-cols-1 md:grid-cols-2  gap-5 py-20  ">
-
-  <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
-
-    <div class="flex items-center justify-center">
-      <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/WhatsApp%20Image%202025-03-27%20at%2011.50.35%20AM.jpeg?updatedAt=1748078328515" alt="vijay krishnan photo" class="h-[300px] rounded-full " />
+ 
+<!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      
+      <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+      <div class="flex justify-center">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/WhatsApp%20Image%202025-03-27%20at%2011.50.35%20AM.jpeg?updatedAt=1748078328515" alt="Vijay Krishnan" class="rounded-full h-80 shadow-md">
+      </div>
+      </div>
+      
+          <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+        <h2 class="text-3xl font-bold text-indigo-700 mb-4">About Me</h2>
+        <p class="text-gray-700 leading-relaxed">With a background in graphic design and a newly acquired skillset in front-end development, I bring a unique perspective to creating digital experiences. I'm proficient in HTML, CSS, and JavaScript, and passionate about delivering visually appealing, responsive websites. My goal is to continue growing as a web developer while blending design excellence with modern technology.</p>
+      </div>
     </div>
-    </div>
+  </section>
 
-    <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
-
-    <div class=" flex flex-col justify-center text-center gap-5">
-      <h1 class="text-2xl font-bold">About me</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, asperiores alias sed amet, molestiae animi laborum quam sit quasi placeat beatae ad? Tempora non maiores repudiandae veritatis sint culpa magni.</p>
-    </div>
-    </div>
-
- </div>
- </div>
-
-
-<!-- about me end  -->   
+  
 
 
 
@@ -191,9 +148,9 @@ type();
        
        
 
-<div id="Skill" class=" 2xl:container mx-auto">
-<h1 class=" text-center  text-4xl py-10 font-bold text-[#0266FF] ">SKILLS</h1>
-<div class="w-[80%]  mx-auto grid sm:grid-cols-2  md:grid-cols-4 gap-5 pb-20 ">
+<div id="Skill" class=" 2xl:container mx-auto bg-[#f3f4f6]">
+   <h1 class="text-center text-4xl pt-20 pb-20 font-bold text-[#4f46e5]">SKILLS</h1>
+<div class="w-[80%]  mx-auto grid sm:grid-cols-2  md:grid-cols-4 gap-5 pb-20  text-center">
         
         
 <!-- round 1 start -->
@@ -262,67 +219,32 @@ type();
 <!-- round 4 end -->
 
 
-<!-- bar-1 -->
-<div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
 
-<div class="border-2 py-2 px-6 flex flex-col items-center justify-center gap-3  ">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/adobe-photoshop-cc-logo-png_seeklogo-268287%20(1).png" alt="" class="h-[40px]">
-
-    <h1 class=" text-1xl text-center font-semibold">Photo shop</h1>
-
-  <div class="w-full bg-gray-300 rounded-full h-3.5 dark:bg-gray-700">
-  <div class="w-[90%] h-3.5 flex items-cente justify-center bg-blue-600  rounded-full text-white text-center text-[10px]">90%</div>
-
-</div>
-</div>
-</div>
-
-
-<!-- bar-2 -->
-<div class="delay-[400ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-
-<div class="border-2 py-2 px-6 flex flex-col items-center justify-center gap-3  ">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/coreldraw-x7-logo-png_seeklogo-248595.png" alt="" class="h-[40px]">
-
-    <h1 class=" text-1xl text-center font-semibold">Corel Draw</h1>
-
-  <div class="w-full bg-gray-300 rounded-full h-3.5 dark:bg-gray-700">
-  <div class="w-[90%] h-3.5 flex items-cente justify-center bg-blue-600  rounded-full text-white text-center text-[10px]">90%</div>
-</div>
-</div>
-</div>
-
-<!-- bar-3 -->
-<div class="delay-[500ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-
-<div class="border-2 py-2 px-6 flex flex-col items-center justify-center gap-3  ">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/adobe-illustrator-cc-logo-png_seeklogo-268288.png" alt="" class="h-[40px]">
-
-    <h1 class=" text-1xl text-center font-semibold">Illustrator</h1>
-
-  <div class="w-full bg-gray-300 rounded-full h-3.5 dark:bg-gray-700">
-  <div class="w-[85%] h-3.5 flex items-cente justify-center bg-blue-600  rounded-full text-white text-center text-[10px]">75%</div>
-</div>
-</div>
-</div>
-
-<!-- bar-4 -->
- <div class="delay-[600ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-
-<div class="border-2 py-2 px-6 flex flex-col items-center justify-center gap-3  ">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/png-transparent-figma-app-logo-tech-companies-thumbnail.png" alt="" class="h-[40px]">
-
-    <h1 class=" text-1xl text-center font-semibold">Figma</h1>
-
-  <div class="w-full bg-gray-300 rounded-full h-3.5 dark:bg-gray-700">
-  <div class="w-[80%] h-3.5 flex items-cente justify-center bg-blue-600  rounded-full text-white text-center text-[10px]">70%</div>
-</div>
-</div>
-</div>
+      <div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/adobe-photoshop-cc-logo-png_seeklogo-268287%20(1).png" alt="Photoshop" class="h-12 mx-auto mb-2">
+        <h4 class="font-semibold text-lg">Photoshop - 90%</h4>
+      </div>
+      
+      
+      <div class="delay-[400ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/coreldraw-x7-logo-png_seeklogo-248595.png" alt="CorelDraw" class="h-12 mx-auto mb-2">
+        <h4 class="font-semibold text-lg">CorelDraw - 90%</h4>
+      </div>
+      
+    <div class="delay-[500ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/adobe-illustrator-cc-logo-png_seeklogo-268288.png" alt="Illustrator" class="h-12 mx-auto mb-2">
+        <h4 class="font-semibold text-lg">Illustrator - 75%</h4>
+      </div>
+      
+     <div class="delay-[600ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/png-transparent-figma-app-logo-tech-companies-thumbnail.png" alt="Figma" class="h-12 mx-auto mb-2">
+        <h4 class="font-semibold text-lg">Figma - 70%</h4>
+      </div>
 
 
 </div>
 </div>
+
         
 
        <!-- SKILLS END -->
@@ -332,20 +254,20 @@ type();
            <!-- EXPERIENCE -->
            
 <div id="" class=" 2xl:container mx-auto bg-[#dadad b] ">
-<h1 class=" text-center  text-4xl font-bold text-[#0266FF] py-10 ">EXPERIENCE</h1>
+<h1 class="text-center text-4xl pt-20 pb-20 font-bold text-[#4f46e5]">EXPERIENCE</h1>
 <div class="w-[80%]  mx-auto grid sm:grid-cols-1 md:grid-cols-2  gap-5">
        
 
  
-     <!-- exp card-1 start -->  
+     <!-- exp bornbaies start -->  
     <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
 
-    <div class="bg-[#ffffff] shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
+    <div class="bg-[#ffffff] shadow-lg hover:bg-[#4f46e5] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
     
     <div class=" flex flex-col gap-3">
-      <h2>2024-2025</h2>
-    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
-    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
+      <h2>2024-Present</h2>
+    <h1 class=" text-[18pt] font-bold">Sr.Graphic Designer  </h1>
+    <h1 class=" text-[16pt] font-semibold "> Born babies india.pvt.ltd </h1>
     <p class=" ">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
     </p>
     <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
@@ -355,68 +277,49 @@ type();
     
   </div>
 
- <!-- exp card-1 end -->  
+ <!-- exp bornbaies end -->  
  
  
- <!-- exp card-2 start -->  
+ <!-- exp ramraj start -->  
     <div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
 
-    <div class="bg-[#ffffff] shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
+    <div class="bg-[#ffffff] shadow-lg hover:bg-[#4f46e5] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
     
     <div class=" flex flex-col gap-3">
       <h2>2024-2025</h2>
     <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
     <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
-    <p class=" ">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    <p class=" ">Designed and developed marketing materials for digital channels, including website banners and social media graphics.      
     </p>
-    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    <p>Gained experience in understanding website design requirements and implementing visual elements.   
     </p>
     </div>
     </div>
     
   </div>
 
- <!-- exp card-2 end -->  
+ <!-- exp ramraj end -->  
  
-   <!-- exp card-3 start -->  
+   <!-- exp graffitee start -->  
     <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
 
-    <div class="bg-[#ffffff] shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
+    <div class="bg-[#ffffff] shadow-lg hover:bg-[#4f46e5] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
     
     <div class=" flex flex-col gap-3">
-      <h2>2024-2025</h2>
-    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
-    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
-    <p class=" ">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+      <h2>2014-2022 </h2>
+    <h1 class=" text-[18pt] font-bold">Graphic Designer & E-commerce executive</h1>
+    <h1 class=" text-[16pt] font-semibold ">Graffitee</h1>
+    <p class=" ">Created visually appealing designs for digital media such as social media graphics and website banners   
     </p>
-    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
+    <p>	 Enhanced visibility of existing products on e-commerce platforms, understanding user engagement through visual presentation
     </p>
     </div>
     </div>
   </div>
 
- <!-- exp card-3 end -->  
+ <!-- exp graffitee end -->  
  
  
- <!-- exp card-4 start -->  
-    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
-
-    <div class="bg-[#ffffff] shadow-lg hover:bg-[#0266ff] hover:text-[#ffffff] rounded-[10px] flex gap-5 py-5 px-5 justify-center delay-80 duration-80 transform transition ease-linear hover:scale-[102%] ">
-    
-    <div class=" flex flex-col gap-3">
-      <h2>2024-2025</h2>
-    <h1 class=" text-[18pt] font-bold">Graphic Designer  </h1>
-    <h1 class=" text-[16pt] font-semibold "> Ramraj Cotton </h1>
-    <p class=" ">	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
-    </p>
-    <p>	Designed and developed marketing materials for digital channels, including website banners and social media graphics.   
-    </p>
-    </div>
-    </div>
-
-  </div>
-
- <!-- exp card-4 end -->  
  
   
 </div>
@@ -425,17 +328,17 @@ type();
   
     <!-- portfolio -->
      <div id="Portfolio" class=" 2xl:container mx-auto bg-[#dad adb] ">
-<h1 class=" text-center  text-4xl font-bold text-[#0266FF] py-10">Portfolio</h1>
+<h1 class="text-center text-4xl pt-20 pb-20 font-bold text-[#4f46e5]">Portfolio</h1>
 <div class="w-[80%]  mx-auto grid sm:grid-cols-1 md:grid-cols-3  gap-3 pb-5 ">  
   
 <!--portfolio card-1-->
 <div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
 
 <div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/mediamodifier_image.jpeg" class="transition-all duration-300 hover:scale-110" />
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/food%20website.jpg" class="transition-all duration-300 hover:scale-110" />
   <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="#">preview</a>
-   <a href="#">Github link</a>
+   <a href="https://www.behance.net/vijaykrishdb26" target="_blank">preview</a>
+   <a href="#" target="_blank">Github link</a>
     </div> </div>  
 </div>
 
@@ -443,32 +346,34 @@ type();
 <div class="delay-[400ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
 
 <div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/mediamodifier_image.png?updatedAt=1748181026252" class="transition-all duration-300 hover:scale-110" />
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/02%20port%20folio.jpg" class="transition-all duration-300 hover:scale-110" />
   <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="#">preview</a>
-   <a href="#">Github link</a>
-    </div></div>
-  
+   <a href="https://www.behance.net/vijaykrishdb26" target="_blank">preview</a>
+   <a href="#" target="_blank">Github link</a>
+    </div> </div>  
 </div>
+  
+
 
 
 <!--portfolio card-3-->
 <div class="delay-[500ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
 
 <div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/food%20website.jpg" class="transition-all duration-300 hover:scale-110" />
   <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="#">preview</a>
-   <a href="#">Github link</a>
-    </div></div>
-  
+   <a href="https://www.behance.net/vijaykrishdb26" target="_blank">preview</a>
+   <a href="#" target="_blank">Github link</a>
+    </div> </div>  
 </div>
+  
+
 
 <!--portfolio card-4-->
 <div class="delay-[600ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
 
 <div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/labour-day.jpg?updatedAt=1747821561140" class="transition-all duration-300 hover:scale-110" />
   <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
    <a href="#">preview</a>
    <a href="#">Github link</a>
@@ -491,7 +396,7 @@ type();
 <div class="delay-[800ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
 
 <div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
+  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/ramzan--3.jpg?updatedAt=1747821561540" class="transition-all duration-300 hover:scale-110" />
   <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
    <a href="#">preview</a>
    <a href="#">Github link</a>
@@ -513,19 +418,26 @@ type();
 
 <!-- contact me -->
 <section id="Contact" class="2xl:container mx-auto bg-[#5c3ef4] text-white py-16 px-4 sm:px-6 lg:px-8 rounded-lg shadow-lg my-10">
-        <h2 class="text-center text-4xl sm:text-5xl font-bold text-white mb-12">Get in Touch!</h2>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        <h2 class="text-center text-4xl font-bold mb-12 text-white ">Get in Touch!</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
+          <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
             <div class="flex flex-col gap-8 p-6 bg-white bg-opacity-10 rounded-xl shadow-inner">
-                <div class="flex items-center gap-4 text-xl sm:text-2xl font-semibold">
+                
+                
+                <div class="flex items-center gap-4 text-xl  font-semibold">
                     <i class="fa-solid fa-phone text-2xl sm:text-3xl text-blue-300"></i>
                     <p class="tracking-wide">+91 98430 48096</p>
                 </div>
-                <div class="flex items-center gap-4 text-xl sm:text-2xl font-semibold">
+                
+                
+                <div class="flex items-center gap-4 text-xl  font-semibold">
                     <i class="fa-solid fa-envelope text-2xl sm:text-3xl text-blue-300"></i>
                     <p class="tracking-wide">vijaykrishnan282@gmail.com</p>
                 </div>
-                <div class="flex gap-4 text-xl sm:text-2xl font-semibold">
+                
+                
+                <div class="flex gap-4 text-xl  font-semibold">
                     <i class="fa-solid fa-location-dot text-2xl sm:text-3xl text-blue-300"></i>
                     <address class="not-italic leading-relaxed tracking-wide">
                         34/24 Karaithottam,<br>
@@ -533,26 +445,42 @@ type();
                         Tiruppur, Tamil Nadu - 641604
                     </address>
                 </div>
+                
+                
             </div>
+            </div>
+             
+            
+            
+          <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
 
             <form class="flex flex-col gap-6 p-6 bg-white bg-opacity-10 rounded-xl shadow-inner">
+                
                 <div>
                     <label for="name" class="block text-lg font-semibold mb-2">Your Name</label>
                     <input type="text" id="name" class="bg-white bg-opacity-20 border border-white border-opacity-30 text-white text-base rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-3 placeholder-gray-300 transition duration-200 ease-in-out" placeholder="Enter your full name" required>
                 </div>
+                
+                
                 <div>
                     <label for="phone" class="block text-lg font-semibold mb-2">Phone Number</label>
                     <input type="tel" id="phone" class="bg-white bg-opacity-20 border border-white border-opacity-30 text-white text-base rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-3 placeholder-gray-300 transition duration-200 ease-in-out" placeholder="e.g., +91 12345 67890" required>
                 </div>
+                
+                
                 <div>
                     <label for="message" class="block text-lg font-semibold mb-2">Your Message</label>
                     <textarea id="message" rows="5" class="bg-white bg-opacity-20 border border-white border-opacity-30 text-white text-base rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-3 placeholder-gray-300 transition duration-200 ease-in-out resize-y" placeholder="Type your message here..." required></textarea>
                 </div>
-                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
-                    Send Message
-                </button>
+                
+                
+                <button type="submit" class="bg-teal-500 text-white px-6 py-2  rounded-full hover:bg-teal-600">Send Message</button>
+                
             </form>
-        </div>
+            
+            </div>
+            
+        
     </section>
      
      <!--aniation script end-->
