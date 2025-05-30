@@ -1,0 +1,14 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+
+.hero {
+  background-image: url('https://ik.imagekit.io/isqo0eqj9/portfolio%20project/freepik__enhance__49552.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
