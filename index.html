@@ -4,37 +4,45 @@
     <title>portfolio website</title>
     <link rel="stylesheet" href="styles.css" />
        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- fontt-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
        <!--animation script-->
       <script>document.documentElement.classList.add('js')</script>
 
   </head>
-  <body>
-    <!-- nav -->
-    <header id="nav" class=" 2xl:container mx-auto bg-[#5c3e f4]">
-      <div class="w-[80%] mx-auto flex item-cente justify-between   py-4">
+  <body class="font-[Popp ins]">
+ 
+  
+      <!-- header  -->
+      <div id="home" class="hero 2xl:container mx-auto">
+        
+           <!-- nav -->
+           <div class="w-[80%] mx-auto flex item-cente justify-between py-4">
       
           <a href="#nav" class="logo px-5 font-bold text-2xl">Portfolio.</a>
       <nav class="flex gap-5 ">
-        <a href="#home" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Home</a>
-        <a href="#Service" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Service</a>
+        <a href="#home" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#3fedcc]">Home</a>
+        <a href="#Service" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#3fedcc]">Service</a>
 
-        <a href="#About" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">About</a>
+        <a href="#About" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#3fedcc]">About</a>
 
-        <a href="#Skill" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Skill</a>
+        <a href="#Skill" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#3fedcc]">Skill</a>
 
-        <a href="#Portfolio" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Portfolio</a>
+        <a href="#Portfolio" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#3fedcc]">Portfolio</a>
 
-        <a href="#Contact" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#5AB2FF]">Contact</a>
+        <a href="#Contact" class="delay-80 duration-100 transform hover:scale-125 transition ease-linear hover:text-[#3fedcc]">Contact</a>
       </nav>
         </div>
-      
-    </header>
-    
-    
-      <!-- hero  -->
-      <div id="home" class="hero 2xl:container mx-auto">
-      <div class="w-[90%] mx-auto grid sm:grid-cols-1  md:grid-cols-2 gap-8  my-20">
+        
+           <!-- nav end  -->
+           
+           
+         <!-- hero banner start  -->
+           
+      <div class="w-[90%] mx-auto grid sm:grid-cols-1  md:grid-cols-2 gap-8 py-10 my-10 border-">
       
     <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
       <div class="flex flex-col items-center justify-center text-center ">
@@ -88,7 +96,7 @@
      <!-- service  -->
      
      <div id="Service" class="2xl:container mx-auto bg-[#5c3 ef4] py-10">
-    <h1 class="text-center text-4xl pt-10 pb-20 font-bold text-[#4f46e5]">SERVICE</h1>
+    <h1 class="text-center text-4xl pt-10 pb-20 font-bold font-Poppins text-[#4f46e5]">SERVICE</h1>
     <div class="w-[80%] mx-auto text-white grid grid-cols-1 md:grid-cols-3 gap-20 pb-10 items-center justify-items-center">
 
       <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
@@ -148,7 +156,7 @@
        
        
 
-<div id="Skill" class=" 2xl:container mx-auto bg-[#f3f4f6]">
+<div id="Skill" class=" 2xl:container mx-auto bg-">
    <h1 class="text-center text-4xl pt-20 pb-20 font-bold text-[#4f46e5]">SKILLS</h1>
 <div class="w-[80%]  mx-auto grid sm:grid-cols-2  md:grid-cols-4 gap-5 pb-20  text-center">
         
@@ -193,7 +201,7 @@
 <div class="flex flex flex-col justify-center items-center">
   <svg width="120" height="120">
             <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#5A3DEF" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
+            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#5A3DEF" stroke-width="12" stroke-linecap="round" stroke-dasharray="280" />
         </svg>
 
   <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" >85%</div>
@@ -208,7 +216,7 @@
 <div class="flex flex flex-col justify-center items-center">
   <svg width="120" height="120">
             <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
-            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#5C3EF4" stroke-width="12" stroke-linecap="round" stroke-dasharray="300" />
+            <circle class=".progress-bar svg circle" cx="60" cy="60" r="54" fill="none" stroke="#5C3EF4" stroke-width="12" stroke-linecap="round" stroke-dasharray="260" />
         </svg>
 
   <div class="absolute mb-10 flex items-center justify-center text-1xl font-semibold text-gray-900" >70%</div>
@@ -327,93 +335,88 @@
   
   
     <!-- portfolio -->
-     <div id="Portfolio" class=" 2xl:container mx-auto bg-[#dad adb] ">
-<h1 class="text-center text-4xl pt-20 pb-20 font-bold text-[#4f46e5]">Portfolio</h1>
-<div class="w-[80%]  mx-auto grid sm:grid-cols-1 md:grid-cols-3  gap-3 pb-5 ">  
-  
-<!--portfolio card-1-->
-<div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+   <div id="Portfolio" class="2xl:container mx-auto bg-[]">
+  <h1 class="text-center text-4xl pt-20 pb-20 font-bold text-[#4f46e5]">Portfolio</h1>
+  <div class="w-[80%] mx-auto grid sm:grid-cols-1 md:grid-cols-3 gap-3 pb-5">
+    
+     <!-- portfolio card-1 -->
 
-<div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/food%20website.jpg" class="transition-all duration-300 hover:scale-110" />
-  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="https://www.behance.net/vijaykrishdb26" target="_blank">preview</a>
-   <a href="#" target="_blank">Github link</a>
-    </div> </div>  
-</div>
-
-<!--portfolio card-2-->
-<div class="delay-[400ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-
-<div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/02%20port%20folio.jpg" class="transition-all duration-300 hover:scale-110" />
-  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="https://www.behance.net/vijaykrishdb26" target="_blank">preview</a>
-   <a href="#" target="_blank">Github link</a>
-    </div> </div>  
-</div>
-  
-
-
-
-<!--portfolio card-3-->
-<div class="delay-[500ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-
-<div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/food%20website.jpg" class="transition-all duration-300 hover:scale-110" />
-  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="https://www.behance.net/vijaykrishdb26" target="_blank">preview</a>
-   <a href="#" target="_blank">Github link</a>
-    </div> </div>  
-</div>
-  
-
-
-<!--portfolio card-4-->
-<div class="delay-[600ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-
-<div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/labour-day.jpg?updatedAt=1747821561140" class="transition-all duration-300 hover:scale-110" />
-  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="#">preview</a>
-   <a href="#">Github link</a>
-    </div></div>
-  
-</div>
-<!--portfolio card-5-->
-<div class="delay-[700ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-
-<div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
-  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="#">preview</a>
-   <a href="#">Github link</a>
-    </div></div>
-  
-</div>
-
-<!--portfolio card-3-->
-<div class="delay-[800ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-
-<div class="relative group overflow-hidden rounded-[10px]">
-  <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/ramzan--3.jpg?updatedAt=1747821561540" class="transition-all duration-300 hover:scale-110" />
-  <div class=" p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
-   <a href="#">preview</a>
-   <a href="#">Github link</a>
-    </div>
-    </div>
-  
-</div>
-
-</div>    
-             <!-- end --> 
-       
-  <!-- view more button -->  
-       <div class="flex justify-center my-10">
-
-       <a href="https://www.behance.net/vijaykrishdb26" target="_blank" class=" bg-[#3FEDCC]  font-semibold hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 shadow-xl  ">view more</a>
+    <div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+      <div class="relative group overflow-hidden rounded-[10px]">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/food%20website.jpg" class="transition-all duration-300 hover:scale-110" />
+        <div class="p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+          <a href="https://vijaykrishnan282.github.io/project/" target="_blank" class="hover:underline">preview</a>
+          <a href="https://github.com/vijaykrishnan282/project.git" target="_blank" class="hover:underline">Github link</a>
+        </div>
       </div>
+    </div>
+
+ <!-- portfolio card-2 -->
+ 
+ 
+    <div class="delay-[400ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+      <div class="relative group overflow-hidden rounded-[10px]">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/02%20port%20folio.jpg" class="transition-all duration-300 hover:scale-110" />
+        <div class="p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+          <a href="https://vijaykrishnan282.github.io/portfolio/" target="_blank" class="hover:underline">preview</a>
+          <a href="https://github.com/vijaykrishnan282/portfolio.git" target="_blank" class="hover:underline">Github link</a>
+        </div>
+      </div>
+    </div>
+
+ <!-- portfolio card-3 -->
+
+    <div class="delay-[500ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+      <div class="relative group overflow-hidden rounded-[10px]">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/03%20to%20dolist-2.jpg?updatedAt=1748493670698" class="transition-all duration-300 hover:scale-110" />
+        <div class="p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+          <a href="https://vijaykrishnan282.github.io/to-do-list-basic/" target="_blank" class="hover:underline">preview</a>
+          <a href="https://github.com/vijaykrishnan282/to-do-list-basic.git" target="_blank" class="hover:underline">Github link</a>
+        </div>
+      </div>
+    </div>
+
+ <!-- portfolio card-4 -->
+
+    <div class="delay-[600ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+      <div class="relative group overflow-hidden rounded-[10px]">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/womens-day.jpg?updatedAt=1747821561160" class="transition-all duration-300 hover:scale-110" />
+        <div class="p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+          <a href="https://www.behance.net/vijaykrishdb26" target="_blank" class="hover:underline">preview</a>
+        </div>
+      </div>
+    </div>
+
+ <!-- portfolio card-5 -->
+
+    <div class="delay-[700ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+      <div class="relative group overflow-hidden rounded-[10px]">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/labour-day.jpg?updatedAt=1747821561140" class="transition-all duration-300 hover:scale-110" />
+        <div class="p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+          <a href="https://www.behance.net/vijaykrishdb26" target="_blank" class="hover:underline">preview</a>
+        </div>
+      </div>
+    </div>
+
+ <!-- portfolio card-6 -->
+
+    <div class="delay-[800ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+      <div class="relative group overflow-hidden rounded-[10px]">
+        <img src="https://ik.imagekit.io/isqo0eqj9/portfolio%20project/ramzan--3.jpg?updatedAt=1747821561540" class="transition-all duration-300 hover:scale-110" />
+        <div class="p-2 opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col gap-1 text-sm bg-black bg-opacity-50 text-white ">
+          <a href="https://www.behance.net/vijaykrishdb26" target="_blank" class="hover:underline">preview</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex justify-center my-10">
+    <a href="https://www.behance.net/vijaykrishdb26" target="_blank" class="bg-[#3FEDCC] font-semibold hover:scale-[110%] transition ease-linear rounded-full px-5 py-1 shadow-xl ">view more</a>
+  </div>
+
 </div>
+<!-- portfolio end -->
 
 
 <!-- contact me -->
